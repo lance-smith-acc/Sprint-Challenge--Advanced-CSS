@@ -2,6 +2,9 @@
 
 .home {
   margin-top:6%;
+  @media @phone {
+    margin-top:20%;
+  }
   .intro {
 
     h2 {
@@ -26,7 +29,7 @@
       height: 100%;
     }
 
-    @media(@phone) {
+    @media @phone {
         .sky, .launch {
           display:none;
         }
@@ -38,6 +41,10 @@
 
   .visit-planets {
     padding: 15px;
+
+    @media @phone {
+      padding:5px 15px 0px;
+    }
 
     h3 {
       margin-top: 11px;
@@ -55,6 +62,9 @@
     display: flex;
     justify-content: center;
     .mobileView(100%, column-reverse, 20px 0 0);
+    @media @phone {
+      margin-top:30px;
+    }
     .walk-text {
       width: 50%;
       .mobileView(95%, 0, 0);
@@ -68,7 +78,7 @@
 
       .btn {
         .signupButton(30%,2% 2% 2%);
-        @media (@phone) {
+        @media @phone {
           .signupButton(100%,5% 0 5%)
         }
 
@@ -91,7 +101,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      .mobileView(100%, 0, 0);
+      .mobileView(100%, 0, 0 4% 0 0);
       img {
         width: 100%;
         height: auto;
