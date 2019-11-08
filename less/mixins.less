@@ -1,1 +1,19 @@
 // Mixins Here
+
+.signupButton(@width,@padding) {
+    width:@width;
+    padding:@padding;
+    background-color:@btn-bg-color;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.mobileView(@width,@flexDir, @padding) {
+    @media @phone {
+        width:@width;
+        flex-direction: @flexDir;
+        padding:@padding;
+        align-items: center;
+    }
+    
+}
